@@ -79,7 +79,7 @@ is not intended to be a detailed technical specification.
 
     9.4 Environmental requirements
 
-10: Documentation Requirements
+10. Documentation Requirements
 
     10.1 Release notes, read me file
 
@@ -89,8 +89,7 @@ is not intended to be a detailed technical specification.
 
     10.4 Labeling and packaging
 
-
-11: Appendix 1 - Feature attributes
+11. Appendix 1 - Feature attributes
 
     11.1 Status
 
