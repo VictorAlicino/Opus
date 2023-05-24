@@ -44,6 +44,7 @@ def check_python() -> None:
 
 
 def main() -> int:
+    """The main function."""
     exit_code: int = 0
 
     check_python()
