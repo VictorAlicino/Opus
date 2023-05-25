@@ -1,5 +1,14 @@
-# Press the green button in the gutter to run the script.
+import sys
+
+def main() -> int:
+    # Check system resources
+
+    # Check files integrity
+
+    
+    return 0;
+
+
 if __name__ == '__main__':
     print('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    sys.exit(main())
