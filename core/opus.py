@@ -3,7 +3,7 @@ import os
 import yaml
 import asyncio
 
-from finals import REQUIRED_PYTHON_VER
+from finals import REQUIRED_PYTHON_VER, SUPPORTED_OS
 
 
 def check_configurations() -> None:
@@ -28,8 +28,14 @@ def check_os() -> None:
     """Check if the right OS is running."""
     print("Checking OS...")
     print(f"OS: {sys.platform}")
-    if sys.platform != "linux" and sys.platform != "darwin":
-        print("ERROR: Linux and MacOS are the only currently supported operating systems.")
+
+    is_supported: bool = False
+    for os_name in SUPPORTED_OS:
+        if sys.platform == os_name:
+            is_supported = True
+            break
+    if is_supported is False:
+        print(f"{sys.platform} is currentely not supported.")
         exit(1)
 
 
